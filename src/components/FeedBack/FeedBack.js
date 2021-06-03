@@ -40,10 +40,10 @@ function FeedBack() {
 
   return (
     <div className={style.wrapper}>
-      <Section title="Please leave feedback" flag={true}>
-        <FeedbackOptions onClick={even => handleFeedback(even)} />
+      <Section title="Please leave feedback" flagTitle={true}>
+        <FeedbackOptions handleFeedback={even => handleFeedback(even)} />
       </Section>
-      <Section title="Statistics" flag={false}>
+      <Section title="Statistics" flagTitle={false}>
         {total > 0 ? (
           <Statistics
             good={good}
